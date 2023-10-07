@@ -6,6 +6,7 @@ klippy_uds_address = ~/printer_data/comms/klippy.sock
 
 [authorization]
 trusted_clients = 
+	127.0.0.1
 	10.0.0.0/8
 	127.0.0.0/8
 	169.254.0.0/16

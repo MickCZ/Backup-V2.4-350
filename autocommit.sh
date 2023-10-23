@@ -28,11 +28,11 @@ moonraker_folder=~/moonraker
 mainsail_folder=~/mainsail
 
 ### Path to your Fluidd folder, by default that is '~/fluidd'
-#fluidd_folder=~/fluidd
+fluidd_folder=~/fluidd
 
 ### The branch of the repository that you want to save your config
-### By default that is 'master'
-branch=master
+### By default that is 'main'
+branch=main
 
 #####################################################################
 #####################################################################
@@ -73,7 +73,7 @@ grab_version(){
 
 push_config(){
   cd $config_folder
-  git pull origin $branch
+  git pull origin $branch --no-rebase
   git add .
   current_date=$(date +"%Y-%m-%d %T")
   git commit -m "Autocommit from $current_date" -m "$m1" -m "$m2" -m "$m3" -m "$m4"

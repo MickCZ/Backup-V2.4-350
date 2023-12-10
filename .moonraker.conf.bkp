@@ -95,3 +95,11 @@ env = /home/pi/mobileraker-env/bin/python
 requirements = scripts/mobileraker-requirements.txt
 install_script = scripts/install-mobileraker-companion.sh
 
+[update_manager websocket-proxy]
+type = git_repo
+path = ~/websocket-proxy
+origin = https://github.com/fragaria/websocket-proxy.git
+enable_node_updates = True
+managed_services = 
+	websocket-proxy
+

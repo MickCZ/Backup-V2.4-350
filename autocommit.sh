@@ -36,7 +36,7 @@ branch=main
 
 ### Set this to true if you want ONLY the history table to be dumped
 ### from data.mdb.
-history_only=false
+# history_only=false
 
 #####################################################################
 #####################################################################
